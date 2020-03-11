@@ -11,6 +11,7 @@ app.use(express.json());
 
 const PORT = process.env.PORT || 5000;
 
+// Logger middleware
 app.use(logger);
 
 // Mount Routes
