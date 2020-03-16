@@ -27,7 +27,7 @@ app.use('/', indexRoute);
 
 // All route will throw an error except those we created
 app.use('*', (req, res) => {
-  res.render('notFound', { error: 'Ops! This Page Could Not Be Found', status: '404' });
+  res.status(404).render('notFound', { error: 'Ops! This Page Could Not Be Found', status: '404' });
 });
 
 
